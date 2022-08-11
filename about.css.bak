@@ -1,0 +1,220 @@
+body { 
+ background-image: url("Images/UnoBackground2.jpg");
+   background-size: 230px;
+  height: 300px;
+ 
+} 
+/* Container for whole page */
+#pageWrapper { 
+background-color: blue; 
+width: 1000px; 
+height: 1000px; 
+margin-left: auto; 
+margin-right: auto;
+} 
+/* Header div */
+#header { 
+position: relative; 
+height: 100px; 
+top: -35px; 
+background-color: green; 
+width: 1000px; 
+} 
+
+h1 {
+position: relative; 
+left: 400px; 
+top: 3px;
+font-size: 64px; 
+} 
+
+/*********************************************************************************************
+					Header Link Buttons 
+*******************************************************************************************/ 
+/* Center Button Style Classes */ 
+.CenterBtnStyle { 
+    position: relative;
+    font-size: 25px;
+    transform: skew(333deg, 18deg);
+    z-index: 2;
+    border: none;
+    padding: 7px;
+    border-radius: 51%;
+    background-color: white;
+	border: 2px solid black; 
+} 
+/* Outer Button Style Classes*/
+.OuterBtnStyle { 
+   position: relative;
+   background-color: red;
+   width: 115px;
+   height: 77px; 
+} 
+/* IconImage Style Classes*/
+.Iconimg { 
+    position: relative; 
+	height: 15px;
+    width: 15px;
+	z-index: 3;
+} 
+
+/* ID's Home Button Styes */ 
+#Home_CenterBtn { 
+    top: -25px;
+    left: 107px;
+    color: red;
+    font-family: "URW Grotesk Regular";
+	text-decoration: underline; 
+} 
+#Home_CenterBtn:hover ~ #Home_OuterBtn { border: 4px solid yellow; }
+#Home_CenterBtn:hover { color: black; }
+#Home_OuterBtn { 
+   top: 0px;
+   left: 13px;
+} 
+#Home_OuterBtn:hover { border: 4px solid yellow; } 
+#Home_TopIconImg{ 
+    transform: rotate(90deg);
+    position: relative;
+    left: 220px;
+    top: -55px;
+
+}
+#Home_TopIconImg:hover ~ #Home_OuterBtn { border: 4px solid yellow; }
+#Home_BotIconImg{ 
+	transform: rotate(270deg);
+    left: 121px;
+    top: 0px;
+
+
+} 
+#Home_BotIconImg:hover ~ #Home_OuterBtn { border: 4px solid yellow; }
+/* End of Home Button Styes */ 
+
+/* ID's Rules Button Styes */ 
+#Rules_CenterBtn { 
+    top: -25px;
+    left: 160px;
+    color: black;
+    font-family: "URW Grotesk Regular";
+	text-decoration: underline; 
+} 
+#Rules_CenterBtn:hover ~ #Rules_OuterBtn { border: 4px solid black; }
+#Rules_CenterBtn:hover { color: black; }
+#Rules_OuterBtn { 
+   top: 0px;
+   left: 60px;
+   background-color: #fede00; 
+} 
+#Rules_OuterBtn:hover { border: 4px solid black; } 
+#Rules_TopIconImg{ 
+    transform: rotate(91deg);
+    position: relative;
+    left: 270px;
+    top: -50px;
+
+}
+#Rules_TopIconImg:hover ~ #Rules_OuterBtn { border: 4px solid black; }
+#Rules_BotIconImg{ 
+	transform: rotate(264deg);
+    left: 165px;
+    top: -1px;
+
+
+} 
+#Rules_BotIconImg:hover ~ #Rules_OuterBtn { border: 4px solid black; }
+/* End of Rules Button Styes */ 
+
+/* ID's Legends Button Styes */ 
+#Legends_CenterBtn { 
+    top: -25px;
+    left: 202px;
+    color: #00a550;
+    font-family: "URW Grotesk Regular";
+	text-decoration: underline; 
+} 
+#Legends_CenterBtn:hover ~ #Legends_OuterBtn { border: 4px solid black; }
+#Legends_CenterBtn:hover { color: black; }
+#Legends_OuterBtn { 
+   top: 0px;
+   left: 90px;
+   background-color: #00a550; 
+} 
+#Legends_OuterBtn:hover { border: 4px solid black; } 
+#Legends_TopIconImg{ 
+    transform: rotate(90deg);
+    position: relative;
+    left: 330px;
+    top: -52px;
+
+}
+#Legends_TopIconImg:hover ~ #Legends_OuterBtn { border: 4px solid black; }
+#Legends_BotIconImg{ 
+	transform: rotate(270deg);
+    left: 220px;
+    top: -3px;
+} 
+#Legends_BotIconImg:hover ~ #Legends_OuterBtn { border: 4px solid black; }
+/* End of Legends Button Styes */ 
+
+/*********************************************************************************************
+					Header Link Buttons 
+*******************************************************************************************/ 
+
+.flip-box {
+  position: relative; 
+  left: 14px;
+  top: -105px;   
+  background-color: transparent;
+  width: 100px;
+  height: 150px;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+	width: 100px;
+    height: 75%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  color: black;
+}
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.FlipCardBefore { 
+  width:68px;
+  height:110px;
+  transform: rotate(270deg);
+} 
+.FlipCardAfter { 
+  width:68px;
+  height:110px;
+  transform: rotate(270deg);
+}
+#LeftMid_FlipCard { 
+top: -254px; 
+left: 280px; 
+} 
+#RightMid_FlipCard { 
+top: -404px; 
+left: 565px; 
+} 
+#Right_FlipCard { 
+top: -555px; 
+left: 862px; 
+} 

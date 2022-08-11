@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style> 
+#container { 
+position: relative; 
+left: 50px; 
+background-color: #000; 
+width: 1400px; 
+height: 100%;
+padding: 9px;  
+
+} 
+</style> 
+</head>
+<body onload="Test(),Test2()">
+
+<div id="container"> 
+
+</div> 
+<script> 
+const Cards = ["Blue0_1.png", "Blue0_2.png", "Blue1_1.png","Blue1_2.png","Blue2_1.png","Blue2_2.png","Blue3_1.png","Blue3_2.png","Blue4_1.png","Blue4_2.png","Blue5_1.png","Blue5_2.png","Blue6_1.png","Blue6_2.png","Blue7_1.png","Blue7_2.png","Blue8_1.png","Blue8_2.png","Blue9_1.png","Blue9_2.png",
+               "Yellow0_1.png", "Yellow0_2.png", "Yellow1_1.png","Yellow1_2.png","Yellow2_1.png","Yellow2_2.png","Yellow3_1.png","Yellow3_2.png","Yellow4_1.png","Yellow4_2.png","Yellow5_1.png","Yellow5_2.png","Yellow6_1.png","Yellow6_2.png","Yellow7_1.png","Yellow7_2.png","Yellow8_1.png","Yellow8_2.png","Yellow9_1.png","Yellow9_2.png",
+			   "Red0_1.png", "Red0_2.png", "Red1_1.png","Red1_2.png","Red2_1.png","Red2_2.png","Red3_1.png","Red3_2.png","Red4_1.png","Red4_2.png","Red5_1.png","Red5_2.png","Red6_1.png","Red6_2.png","Red7_1.png","Red7_2.png","Red8_1.png","Red8_2.png","Red9_1.png","Red9_2.png",
+			   "Green0_1.png", "Green0_2.png", "Green1_1.png","Green1_2.png","Green2_1.png","Green2_2.png","Green3_1.png","Green3_2.png","Green4_1.png","Green4_2.png","Green5_1.png","Green5_2.png","Green6_1.png","Green6_2.png","Green7_1.png","Green7_2.png","Green8_1.png","Green8_2.png","Green9_1.png","Green9_2.png"
+			   ];
+const SpecialCards = ["BlackDraw_1.png","BlackDraw_2.png","BlackDraw_3.png","BlackDraw_4.png","BlackWild_1.png","BlackWild_2.png","BlackWild_3.png","BlackWild_4.png",]; 
+
+function Test() { 
+
+for (let i = 0; i < Cards.length; i++) {
+var img = document.createElement('img');
+img.src = "images/" + Cards[i] ;
+document.getElementById('container').appendChild(img);
+
+}
+} // End of Test() 
+function Test2() { 
+
+for (let i = 0; i < SpecialCards.length; i++) {
+var img = document.createElement('img');
+img.src = "images/" + SpecialCards[i] ;
+document.getElementById('container').appendChild(img);
+var Append = document.getElementById('container').appendChild(img);
+Append.onclick = loadScript;
+}
+}// End of Test2() 
+
+
+function loadScript(){
+ alert('Hi')
+}
+
+</script> 
+
+
+</body>
+</html>
+
